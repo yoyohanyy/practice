@@ -5,41 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul.a {
-        list-style-type: circle;
-        }
         body {
-        font: 100% Courier New;
-        background-color: black;
+        font: 100% Verdana;
+        background-color: white;
+        margin-top: 40px;
+        }
+        h1 {
+        color: rgb(49, 203, 49);
+        }
+        h2 {
+        color: rgb(49, 203, 49);
+        }
+        h3 {
+        color: rgb(49, 203, 49);
         }
         a {
-        color: white;
+        color: black;
         }
 
         #main {
-        color: #84c754;
         margin: 20px;
         line-height: 26px;
         }
 
         #sidebar {
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        border-radius: 4px;
+        background-color: rgb(241, 241, 241);
+        border: 1px solid gray;
         padding: 10px;
         padding-bottom: 23px;
-        width: 320px;
-        top: 0;
-        right: 0;
-        position: absolute;
         font-size: 80%;
         line-height: 20px;
         margin: 20px;
-        margin-top: 100px;
         }
 
         #bottom {
-        color: #ffffff;
         border: 1px solid #ffffff;
         border-radius: 4px;
         padding: 10px;
@@ -48,6 +47,25 @@
         margin: 10px;
         text-align: center;
         }
+
+        #menulist {
+        padding: 0;
+        position: relative;
+        overflow: auto;
+        }
+
+        .menuitem {
+        width: 165px;
+        float: left;
+        background-color: #555555;
+        color: #ffffff;
+        list-style-type: none;
+        margin: 4px;
+        padding: 2px;
+        text-align: center;
+        cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -58,12 +76,12 @@
         </div>
         <div>
             <div id = "main">
-                <ul>
-                    <li>Stylesheet 1</li>
-                    <li>Stylesheet 2</li>
-                    <li>Stylesheet 3</li>
-                    <li>Stylesheet 4</li>
-                    <li>No Stylesheet</li>
+                <ul id = "menulist">
+                    <li class="menuitem">Stylesheet 1</li>
+                    <li class="menuitem">Stylesheet 2</li>
+                    <li class="menuitem">Stylesheet 3</li>
+                    <li class="menuitem">Stylesheet 4</li>
+                    <li class="menuitem">No Stylesheet</li>
                 </ul>
             </div>
             <div id = "main">
